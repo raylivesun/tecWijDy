@@ -27,3 +27,6 @@ If you are looking for information about a specific topic related to D programmi
 The provided code snippet is a comment containing a link to the D programming language's specification on interfaces. The term "TecWijDy" is not a recognized term in the context of the code or the D programming language. It seems to be a typo or a placeholder.
 
 If you are looking for information about a specific topic related to D programming language's interfaces, you can refer to the link provided: https://dlang.org/spec/interface.html.
+
+# install makefile
+$-> make all
