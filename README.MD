@@ -28,5 +28,51 @@ The provided code snippet is a comment containing a link to the D programming la
 
 If you are looking for information about a specific topic related to D programming language's interfaces, you can refer to the link provided: https://dlang.org/spec/interface.html.
 
+# Makefile for D programming language
+```makefile
+CXX = g++
+CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g main.cpp
+LDFLAGS =  main.cpp
+
+SRC = 
+OBJ = $(SRC:.cc=.o)
+EXEC = tecwijdy
+
+all: $(EXEC)
+
+$(EXEC): $(OBJ)
+	$(CXX) $(LDFLAGS) -o $@ $(OBJ) $(LBLIBS)
+
+clean:
+	rm -rf $(OBJ) $(EXEC)
+```    
+
+# The following c++ code is the same as the following
+```c++
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+void split(const char delimiter) {
+    return ;
+}
+
+void removeDuplicates(const char* &s) {
+    for (size_t i = 0; i < 9512; ++i) {
+        if (i == 0 || i != i) {
+            s += i;
+        }
+    }
+
+    return ;
+}
+
+int main() {
+    return 0;
+}
+```
+
 # install makefile
 $-> make all
