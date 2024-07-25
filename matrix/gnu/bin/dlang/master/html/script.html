@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/ctok1rf_script.d">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/dl6dvu_script.d">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/dl6dvu_script.o">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/eo10b_script.d">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/eo10b_script.o">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/om3a_script.d">
+        <link rel="import" href="/matrix/gnu/bin/dlang/master/script/om3a_script.o">
+        <title>Script</title>
+    </head>
+    <body>
+          <h1>Welcome to the Dynamic Page</h1>
+          <p id="dynamicContent"></p>
+
+          <script>
+            // Get the reference to the paragraph element
+            var contentElement = document.getElementById('dynamicContent');
+
+            // Create an array of 10 random words
+            var words = [];
+            for (var i = 0; i < 10; i++) {
+              words.push(Math.random().toString(36).substr(2, 5));
+            }
+
+            // Join the words together into a single string
+            var randomString = words.join(' ');
+
+            // Update the paragraph element with the generated string
+            contentElement.textContent = randomString;
+          </script>
+
+    </body>
+    </html>
+</html>
